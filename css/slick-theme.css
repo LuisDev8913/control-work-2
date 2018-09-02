@@ -109,18 +109,8 @@ background: transparent;
 
 .slick-dots
 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: #000;
-    display: block;
-    width: 100%;
     
-    margin: 0;
-    list-style: none;
-    text-align: left;
-     top:80%;
-    padding-left: 88px;
+    
 }
 .slick-dots li
 {

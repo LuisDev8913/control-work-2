@@ -99,13 +99,14 @@ h2{
 }
 p{
 	font-size: 14px;
-	width: 70%;
+	width: 40%;
 	margin: 0 auto;
 	color: $textp;
 	line-height: 30px;
+	font-family: $family;
 }
 .portfolio{
-	padding-top: 80px;
+	padding: 80px 0px 100px;
 	text-align: center;
 	color:$textcolor;
 	a{
@@ -160,12 +161,37 @@ p{
 
 .team{
 	text-align: center;
-	padding: 100px 0px;
+	padding: 100px 70px;
+	background: $color;
+
 }
 .my_slider{
 	margin-top: 100px;
-	margin-left: 40px;
+	padding-bottom: 40px;
 }
+.slick-dots{
+        position: absolute;
+	    left: 50%;
+	    display: block;
+	    text-align: center;
+	    height: 40px;
+	    list-style: none;
+	    text-align: center;
+	    top:100%;
+	    transform: translate(-50%);
+}
+.slick-dots li button {
+  border-radius: 50%;
+  width:10px;
+  height: 10px;
+  border: 1px solid $color_slide;
+}
+.slick-dots li button:hover,
+.slick-dots li.slick-active button{
+  background-color: $color_slide;
+   border-radius: 50%;
+ }
+ 
 .man{
 	text-align: right;
 
@@ -193,11 +219,11 @@ p{
 }
 .already{
 	background: url(../img/bg2.jpg);
-	padding: 50px 0px;
+	padding: 50px 0px 60px;
 	text-align: center;
 	font-size: 20px;
 	strong{
-		line-height: 40px;
+		line-height: 60px;
 	}
 	.btn{
 		border: 1px solid #fff;
@@ -208,31 +234,76 @@ p{
 		line-height: 40px;
 		width: 150px;
 		margin: 0 auto;
+		cursor: pointer;
+	}
+	.btn:hover{
+		border-color: $color_slide;
+		color: $color_slide;
 	}
 }
 .test{
-	padding: 50px 0px;
+	padding: 80px 0px 100px;
 	text-align: center;
 	font-size: 20px;
+	.my_slider{
+		padding: 50px 70px;
+		background: $color;
+		margin-top: 50px;
+	}
 	.man_info{
 		text-align: left;
-		float: left;
+		float: right;
 		display: block;
-		margin-left: 20px;
+		width: 80%;
+		line-height: 30px;
+		p{
+			width: 90%;
+			margin-bottom: 20px;
+
+		}
+		h3{
+			color: $color_slide;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		span{
+			text-transform: uppercase;
+		}
 	}
-}
-.test .man_info p{
-	width:800px;
+
+	.slick-dots{
+	    position: absolute;
+	    left: 50%;
+	    display: block;
+	    text-align: center;
+	    height: 40px;
+	    list-style: none;
+	    text-align: center;
+	    top:85%;
+	    transform: translate(-50%);
+	}
 }
 .contact{
 	text-align: center;
-	padding: 50px 0px;
-}
+	padding: 60px 0px 0px;
+	background: $color;
+}	
 #map {
 	display: block;
     height: 400px;
     border: 1px solid black;
 }
-/*...................menu....................*/
+.map{
+	margin-top: 70px;
+}
+
+.footer{
+	text-align: center;
+	padding: 70px 0px;
+	p{
+		line-height: 30px;
+	}
+}
+
 
 
