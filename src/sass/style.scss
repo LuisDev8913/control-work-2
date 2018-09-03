@@ -35,19 +35,11 @@ header{
 		line-height: 40px;
 		margin-bottom: 200px;
 	}
-	.logo{
-  		font-size: 18px;
-  		text-transform: uppercase;
-  		font-weight: bold;
-	}
-
 	 nav ul{
 		@include flexbox;
 		@include justify-content(space-between);
 		line-height: 30px;
 		height: 30px;
-
-
 	}
 	nav ul li{
 		margin-left: 10px;
@@ -66,7 +58,6 @@ header{
 			margin-bottom: 40px;
 			text-transform: uppercase;
 			letter-spacing: 4px;
-			
 		}
 		p{
 			max-width: 630px;
@@ -126,7 +117,7 @@ p{
 		@include flexbox;
 		@include justify-content(space-around);
 		line-height: 30px;
-		max-width: 50%;
+		max-width: 40%;
 		margin: 0 auto;
 		height: 60px;
 	}
@@ -304,8 +295,6 @@ p{
 .map{
 	margin-top: 70px;
 }
-
-
 .footer{
 	text-align: center;
 	padding: 70px 0px;
