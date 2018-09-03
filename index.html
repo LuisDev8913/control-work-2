@@ -4,11 +4,12 @@
         <title>About Us</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="pro/img/favicon.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:300,400" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="pro/css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="pro/css/slick-theme.css"/>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <link href="css/main.min.css" rel="stylesheet" type="text/css"/>
+        <link href="pro/css/main.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         
@@ -16,14 +17,20 @@
             <div class="container">
                  <div class="top_nav">
                     <div class="logo">
-                        <h1>bouncy</h1>
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="113px" height="19px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M105.872,12.101 L105.872,19.000 L100.998,19.000 L100.998,12.101 L94.150,0.254 L99.823,0.254 L103.422,6.503 L107.047,0.254 L112.720,0.254 L105.872,12.101 ZM85.647,14.026 C86.922,14.026 88.021,13.576 88.796,12.776 L92.295,16.225 C90.596,17.925 88.246,19.000 85.647,19.000 C80.473,19.000 76.274,14.801 76.274,9.627 C76.274,4.453 80.473,0.254 85.647,0.254 C88.221,0.254 90.546,1.279 92.245,2.979 L88.796,6.453 C88.021,5.678 86.922,5.228 85.647,5.228 C83.098,5.228 81.248,7.077 81.248,9.627 C81.248,12.177 83.098,14.026 85.647,14.026 ZM63.323,10.127 L63.323,19.000 L58.399,19.000 L58.399,0.254 L60.399,0.254 L69.271,9.102 L69.271,0.254 L74.195,0.254 L74.195,19.000 L72.171,19.000 L63.323,10.127 ZM47.247,19.000 C43.123,19.000 39.849,15.725 39.849,11.601 L39.849,0.254 L44.798,0.254 L44.798,11.527 C44.798,12.876 45.898,13.976 47.247,13.976 C48.597,13.976 49.697,12.876 49.697,11.527 L49.697,0.254 L54.646,0.254 L54.646,11.601 C54.646,15.725 51.321,19.000 47.247,19.000 ZM27.572,19.000 C22.398,19.000 18.224,14.826 18.224,9.652 C18.224,4.478 22.398,0.254 27.572,0.254 C32.746,0.254 36.945,4.478 36.945,9.652 C36.945,14.826 32.746,19.000 27.572,19.000 ZM27.572,5.153 C25.123,5.153 23.123,7.153 23.123,9.627 C23.123,12.076 25.123,14.101 27.572,14.101 C30.047,14.101 32.046,12.076 32.046,9.627 C32.046,7.153 30.047,5.153 27.572,5.153 ZM10.147,19.000 L0.900,19.000 L0.900,0.254 L9.173,0.254 C12.172,0.254 14.721,2.829 14.721,5.828 C14.721,7.102 14.246,8.277 13.521,9.202 C14.796,10.227 15.646,11.801 15.646,13.501 C15.646,16.475 13.122,19.000 10.147,19.000 ZM8.198,4.328 L5.823,4.328 L5.823,7.577 L8.198,7.577 C9.098,7.577 9.822,6.853 9.822,5.953 C9.822,5.053 9.098,4.328 8.198,4.328 ZM9.123,11.701 L5.823,11.701 L5.823,14.951 L9.123,14.951 C10.022,14.951 10.747,14.226 10.747,13.326 C10.747,12.426 9.972,11.701 9.123,11.701 Z"/>
+                        </svg>
                     </div>
                     <nav>
                         <ul>
                             <li><a href="#">Hello</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav> 
                 </div>
@@ -33,46 +40,46 @@
                 </div>
 
                 <div class="btn-bottom">
-                    <a href="#name"></a>
+                    <a href="#portfolio"></a>
                 </div>
 
             </div>
         </header>
         <section>
-            <div class="portfolio">
+            <div class="portfolio" id="portfolio">
                 <div class="container">
                     <h2>the portfolio</h2>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                     <div class="filter">
                         <nav>
                             <ul>
-                                <li data-filter="*"><a href="#nowhere" title="All works">All works</a></li>
-                                <li data-filter="*"><a href="#nowhere" title="Print">Print</a></li>
-                                <li data-filter="*"><a href="#nowhere" title="Branding">Branding</a></li>
-                                <li data-filter="*"><a href="#nowhere" title="Web">Web</a></li>
-                                <li data-filter="*"><a href="#nowhere" title="HTML">HTML</a></li>
+                                <li data-filter="*" title="All works">All works</li>
+                                <li data-filter=".print" title="Print">Print</li>
+                                <li data-filter=".branding"  title="Branding">Branding</li>
+                                <li data-filter=".web" title="Web">Web</li>
+                                <li data-filter=".html" title="HTML">HTML</li>
                             </ul>
                         </nav>
                         <div class="grid">
-                            <div class="grid-item" data-filter="*"><img src="img/1-1.jpg"></div>
-                            <div class="grid-item"><img src="img/1-2.jpg"></div>
-                            <div class="grid-item"><img src="img/1-3.jpg"></div>
-                            <div class="grid-item"><img src="img/1-4.jpg"></div>
-                            <div class="grid-item"><img src="img/table.jpg"></div>
-                            <div class="grid-item"><img src="img/2-3.jpg"></div>
-                            <div class="grid-item"><img src="img/2-2.jpg"></div>
-                            <div class="grid-item"><img src="img/2-4.jpg"></div>
-                            <div class="grid-item"><img src="img/3-1.jpg"></div>
-                            <div class="grid-item"><img src="img/3-2.jpg"></div>
-                            <div class="grid-item"><img src="img/3-3.jpg"></div>
-                            <div class="grid-item"><img src="img/3-4.jpg"></div>
+                            <div class="grid-item"><img src="pro/img/1-1.jpg"></div>
+                            <div class="grid-item print"><img src="pro/img/1-2.jpg"></div>
+                            <div class="grid-item print"><img src="pro/img/1-3.jpg"></div>
+                            <div class="grid-item branding"><img src="pro/img/1-4.jpg"></div>
+                            <div class="grid-item branding"><img src="pro/img/table.jpg"></div>
+                            <div class="grid-item branding"><img src="pro/img/2-3.jpg"></div>
+                            <div class="grid-item web"><img src="pro/img/2-2.jpg"></div>
+                            <div class="grid-item web"><img src="pro/img/2-4.jpg"></div>
+                            <div class="grid-item print"><img src="pro/img/3-1.jpg"></div>
+                            <div class="grid-item html"><img src="pro/img/3-2.jpg"></div>
+                            <div class="grid-item html"><img src="pro/img/3-3.jpg"></div>
+                            <div class="grid-item html"><img src="pro/img/3-4.jpg"></div>
                         </div>
                     </div>
                 <div>
             </div>
         </section>
         <section>
-             <div class="team">
+             <div class="team" id="team">
                 <div class="container">
                     <h2>the team</h2>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
@@ -80,7 +87,7 @@
                         <div class="my_slider">
                             <div class="man">
                                 <div class="man_img">
-                                    <img src="img/man.jpg">
+                                    <img src="pro/img/man.jpg">
                                 </div>
                                 <div class="man_info">
                                     <h3>Abdullah Noman</h3>
@@ -90,7 +97,7 @@
                             </div>
                             <div class="man">
                                 <div class="man_img">
-                                    <img src="img/man.jpg">
+                                    <img src="pro/img/man.jpg">
                                 </div>
                                 <div class="man_info">
                                     <h3>Abdullah Noman</h3>
@@ -123,7 +130,7 @@
                  <div class="my_slider">
                     <div class="man">
                         <div class="man_img">
-                            <img src="img/test.jpg">
+                            <img src="pro/img/test.jpg">
                         </div>
                             <div class="man_info">
                                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. 
@@ -134,7 +141,7 @@
                     </div>
                     <div class="man">
                         <div class="man_img">
-                            <img src="img/test.jpg">
+                            <img src="pro/img/test.jpg">
                         </div>
                         <div class="man_info">
                                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. 
@@ -145,7 +152,7 @@
                     </div>
                     <div class="man">
                         <div class="man_img">
-                            <img src="img/test.jpg">
+                            <img src="pro/img/test.jpg">
                         </div>
                             <div class="man_info">
                                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. 
@@ -158,7 +165,7 @@
             </div>
         </section>
         <section>
-            <div class="contact">
+            <div class="contact" id="contact">
                 <div class="container">
                      <h2>contact us</h2>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
@@ -181,11 +188,48 @@
                         </filter>
                     </defs>
                     <g filter="url(#Filter_0)">
-                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                    <path fill-rule="evenodd" id="hover" fill="rgb(255, 255, 255)"
                      d="M105.872,12.101 L105.872,19.000 L100.998,19.000 L100.998,12.101 L94.150,0.254 L99.823,0.254 L103.422,6.503 L107.046,0.254 L112.720,0.254 L105.872,12.101 ZM85.647,14.026 C86.922,14.026 88.021,13.576 88.796,12.776 L92.295,16.225 C90.596,17.925 88.246,19.000 85.647,19.000 C80.473,19.000 76.274,14.801 76.274,9.627 C76.274,4.453 80.473,0.254 85.647,0.254 C88.221,0.254 90.546,1.279 92.245,2.978 L88.796,6.453 C88.021,5.678 86.922,5.228 85.647,5.228 C83.098,5.228 81.248,7.078 81.248,9.627 C81.248,12.177 83.098,14.026 85.647,14.026 ZM63.323,10.127 L63.323,19.000 L58.399,19.000 L58.399,0.254 L60.399,0.254 L69.272,9.102 L69.272,0.254 L74.195,0.254 L74.195,19.000 L72.171,19.000 L63.323,10.127 ZM47.247,19.000 C43.123,19.000 39.849,15.726 39.849,11.602 L39.849,0.254 L44.798,0.254 L44.798,11.526 C44.798,12.876 45.898,13.976 47.247,13.976 C48.597,13.976 49.697,12.876 49.697,11.526 L49.697,0.254 L54.646,0.254 L54.646,11.602 C54.646,15.726 51.321,19.000 47.247,19.000 ZM27.572,19.000 C22.398,19.000 18.224,14.826 18.224,9.652 C18.224,4.478 22.398,0.254 27.572,0.254 C32.746,0.254 36.945,4.478 36.945,9.652 C36.945,14.826 32.746,19.000 27.572,19.000 ZM27.572,5.153 C25.123,5.153 23.123,7.153 23.123,9.627 C23.123,12.076 25.123,14.101 27.572,14.101 C30.046,14.101 32.046,12.076 32.046,9.627 C32.046,7.153 30.046,5.153 27.572,5.153 ZM10.147,19.000 L0.899,19.000 L0.899,0.254 L9.172,0.254 C12.172,0.254 14.721,2.829 14.721,5.828 C14.721,7.103 14.246,8.278 13.521,9.202 C14.796,10.227 15.646,11.801 15.646,13.501 C15.646,16.475 13.121,19.000 10.147,19.000 ZM8.198,4.328 L5.823,4.328 L5.823,7.577 L8.198,7.577 C9.097,7.577 9.822,6.853 9.822,5.953 C9.822,5.053 9.097,4.328 8.198,4.328 ZM9.122,11.701 L5.823,11.701 L5.823,14.951 L9.122,14.951 C10.022,14.951 10.747,14.226 10.747,13.326 C10.747,12.427 9.972,11.701 9.122,11.701 Z"/>
                     </g>
                     </svg>
                     <p>Copyright 2015. All rights Reserved</p>
+                    <ul>
+                        <li><a href="#"><svg 
+                             xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="8px" height="14px">
+                            <path fill-rule="evenodd"  id="hover" fill="rgb(255, 255, 255)"
+                            d="M5.558,3.011 L7.208,3.011 L7.208,0.574 L5.269,0.574 L5.269,0.583 C2.920,0.666 2.438,1.987 2.396,3.375 L2.391,3.375 L2.391,4.591 L0.792,4.591 L0.792,6.977 L2.391,6.977 L2.391,13.374 L4.803,13.374 L4.803,6.977 L6.778,6.977 L7.158,4.591 L4.803,4.591 L4.803,3.856 C4.803,3.387 5.114,3.011 5.558,3.011 Z"/>
+                        </svg></a></li>
+                        <li><a href="#"><svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="16px" height="13px">
+                             <path fill-rule="evenodd" id="hover" fill="rgb(255, 255, 255)"
+                            d="M16.002,1.822 C15.443,2.064 14.842,2.226 14.210,2.300 C14.855,1.925 15.349,1.332 15.582,0.625 C14.979,0.971 14.312,1.224 13.601,1.359 C13.032,0.771 12.222,0.403 11.325,0.403 C9.602,0.403 8.205,1.759 8.205,3.431 C8.205,3.668 8.233,3.899 8.286,4.121 C5.694,3.995 3.395,2.789 1.856,0.957 C1.588,1.405 1.434,1.925 1.434,2.479 C1.434,3.530 1.985,4.457 2.822,4.999 C2.311,4.983 1.829,4.847 1.409,4.621 C1.409,4.634 1.409,4.646 1.409,4.659 C1.409,6.125 2.484,7.349 3.911,7.627 C3.649,7.696 3.374,7.734 3.089,7.734 C2.888,7.734 2.693,7.714 2.502,7.679 C2.899,8.882 4.051,9.757 5.416,9.781 C4.348,10.593 3.004,11.078 1.542,11.078 C1.290,11.078 1.042,11.063 0.798,11.035 C2.179,11.894 3.818,12.396 5.580,12.396 C11.317,12.396 14.454,7.782 14.454,3.782 C14.454,3.651 14.452,3.519 14.446,3.390 C15.055,2.964 15.584,2.430 16.002,1.822 Z"/>
+                        </svg></a></li>
+                        <li><a href="#"><svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="13px" height="12px">
+                            <path fill-rule="evenodd" id="hover" fill="rgb(255, 255, 255)"
+                            d="M10.008,11.787 L10.008,7.431 C10.008,6.537 9.750,5.643 8.699,5.643 C7.647,5.643 6.808,6.537 6.808,7.452 L6.808,11.787 L4.402,11.787 L4.402,3.772 L6.808,3.772 L6.808,4.884 C7.546,3.946 8.587,3.521 9.750,3.521 C10.914,3.521 12.406,4.102 12.406,7.252 L12.406,11.787 L10.008,11.787 ZM0.412,3.797 L2.810,3.797 L2.810,11.787 L0.412,11.787 L0.412,3.797 ZM1.600,2.999 C0.937,2.999 0.400,2.462 0.400,1.799 C0.400,1.137 0.937,0.599 1.600,0.599 C2.263,0.599 2.800,1.137 2.800,1.799 C2.800,2.462 2.263,2.999 1.600,2.999 Z"/>
+                            </svg></a></li>
+                        <li><a href="#"><svg 
+                             xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="16px" height="16px">
+                            <path fill-rule="evenodd"  id="hover" fill="rgb(255, 255, 255)"
+                            d="M12.418,0.797 L3.582,0.797 C2.047,0.797 0.798,2.046 0.798,3.581 L0.798,6.521 L0.798,12.418 C0.798,13.953 2.047,15.201 3.582,15.201 L12.418,15.201 C13.953,15.201 15.202,13.953 15.202,12.418 L15.202,6.521 L15.202,3.581 C15.202,2.046 13.953,0.797 12.418,0.797 ZM13.295,2.408 L13.610,2.407 L13.610,2.717 L13.610,4.798 L11.202,4.805 L11.194,2.415 L13.295,2.408 ZM8.000,5.590 C9.997,5.590 10.410,7.465 10.410,8.000 C10.410,9.327 9.328,10.409 8.000,10.409 C6.671,10.409 5.590,9.327 5.590,8.000 C5.590,7.465 6.003,5.590 8.000,5.590 ZM13.624,12.243 C13.624,13.004 13.004,13.623 12.243,13.623 L3.732,13.623 C2.970,13.623 2.351,13.004 2.351,12.243 L2.351,6.396 L4.351,6.396 C4.166,6.853 4.061,7.476 4.061,8.000 C4.061,10.171 5.828,11.938 8.000,11.938 C10.172,11.938 11.938,10.171 11.938,8.000 C11.938,7.476 11.833,6.853 11.648,6.396 L13.624,6.396 L13.624,12.243 Z"/>
+                        </svg></a></li>
+                        <li><a href="#"><svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                             width="15px" height="13px">
+                            <path fill-rule="evenodd" id="hover" fill="rgb(255, 255, 255)"
+                            d="M0.800,3.599 C1.997,2.643 3.699,0.546 5.026,0.546 C6.352,0.546 6.677,2.111 6.858,3.532 C7.040,4.952 7.562,8.058 8.262,8.058 C8.965,8.058 10.564,5.311 10.473,4.249 C10.382,3.188 9.225,3.346 8.588,3.652 C9.173,1.527 10.525,0.400 12.254,0.400 C13.983,0.400 14.400,1.621 14.400,3.121 C14.400,5.404 9.771,12.399 6.976,12.399 C5.246,12.399 4.818,9.851 4.467,8.589 C4.115,7.329 3.426,4.023 2.620,3.811 C2.307,3.758 1.424,4.461 1.424,4.461 L0.800,3.599 Z"/>
+                        </svg></a></li>
+                    </ul>
                 
 
                 </div>
@@ -200,8 +244,8 @@
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
         
-        <script type="text/javascript" src="js/slick.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script> 
-        <script type="text/javascript" src="js/script.min.js"></script>
+        <script type="text/javascript" src="pro/js/slick.min.js"></script>
+        <script src="pro/js/isotope.pkgd.min.js"></script> 
+        <script type="text/javascript" src="pro/js/script.min.js"></script>
     </body>
 </html>

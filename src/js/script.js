@@ -1,15 +1,25 @@
 $(document).ready(function(){
 	
-	$('.grid').isotope({
 
+	 // isotope
+  $('.grid').isotope({
   		itemSelector: '.grid-item',
-  
   		masonry: {
-    		columnWidth: 70
+    		 columnWidth:  '.grid-item',
+         isFitWidth: true,
+         gutter: 10,
   		}
 	});
+ 
+  $('.filter nav ul li').click(function(){
+    var selector = $(this).attr('data-filter');
+    $('.grid').isotope({
+      filter:selector
+    });
+    
+  });
 
-
+// slider
 	$('.my_slider').slick({
   		infinite: true,
   		speed: 400,
@@ -18,22 +28,38 @@ $(document).ready(function(){
   		arrows: false,
   		autoplay: true
   	}) 
+  // Scroll
 
+    $("nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1700);
+    });
   	
+        // map
+      
+    var mapContainer = document.getElementById('map');
+    showMap(document.getElementById('map'), 49.568583 ,  34.585416 );
 
-        // Функция initMap которая отрисует карту на странице
-        var map;
-        function initMap() {
-            // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
-            var map = new google.maps.Map(document.getElementById('map'), {
-                // При создании объекта карты необходимо указать его свойства
-                // center - определяем точку на которой карта будет центрироваться
-                position: {lat: -34.397, lng: 150.644},
-                // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
-                zoom: 8
-            });
-        }
+    function showMap(mapContainer, lat, lon) {
+        var center = new google.maps.LatLng(lat, lon);
+        var marker = new google.maps.Marker({
+            position: {lat: 49.568583, lng: 34.585416},
+            icon: {
+                url: "pro/img/marker.png"
+            }
+        });
+        var mapProp= {
+            center: center,
+            zoom: 10,
+            zoomControl:false,
+            disableDefaultUI: true,
+        };
 
+        var map = new google.maps.Map(mapContainer, mapProp);
+        marker.setMap(map);
 
-initMap();
+    }
+
 });

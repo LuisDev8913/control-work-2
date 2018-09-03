@@ -34,7 +34,7 @@ gulp.task('style', function() {
         .pipe(sass({includePaths: ['src/sass/**']}))
         .pipe(rename({suffix: '.min'}))
         .pipe(minify())
-        .pipe(gulp.dest('css/'))
+        .pipe(gulp.dest('pro/css/'))
         .pipe(notify({message: 'Style task is finished'}))
         .pipe(bs.reload({stream: true}));
 });
@@ -43,7 +43,7 @@ gulp.task('script', function() {
     return gulp.src('src/js/script.js')
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('js/'))
+        .pipe(gulp.dest('pro/js/'))
         .pipe(notify({message: 'Script task is finished'}))
         .pipe(bs.reload({stream: true}));
 });
@@ -51,5 +51,5 @@ gulp.task('script', function() {
 gulp.task('imagemin', function() {
     return gulp.src('src/img/**')
         .pipe(imagemin())
-        .pipe(gulp.dest('img/'));
+        .pipe(gulp.dest('pro/img/'));
 });

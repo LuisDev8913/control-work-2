@@ -46,8 +46,9 @@
 @mixin translate ($x, $y) {
 	@include transform(translate($x, $y));
 }
-@mixin p{
-	width: 64%;
-	margin: 0 auto;
-	line-height: 24px;
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
 }

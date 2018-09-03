@@ -47,11 +47,12 @@ header{
 		line-height: 30px;
 		height: 30px;
 
+
 	}
 	nav ul li{
 		margin-left: 10px;
 		padding: 0px 10px;
-
+		display: inline-block;
 	}
 	nav ul li:hover{
 		border: 1px solid #fff;
@@ -90,7 +91,9 @@ header{
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
-
+.btn-bottom:hover a:after{
+  color: #FFFF00;
+}
 h2{
 	text-transform: uppercase;
 	color: $texth;
@@ -124,7 +127,6 @@ p{
 		margin: 0 auto;
 		height: 60px;
 	}
-
 	nav{
 		margin: 70px 0px 60px;
 	}
@@ -133,13 +135,10 @@ p{
 		margin-left: 10px;
 		position: relative;
 		border: none;
+		line-height: 40px;
+		cursor: pointer;
 	}
-	nav ul li a{
-		position: relative;
-		line-height: 60px;
-
-	}
-	nav ul li a:after{
+	nav ul li:after{
 		content:"";
 		width: 40px;
 		height: 2px;
@@ -149,16 +148,20 @@ p{
 		left: 50%;
   	    transform: translate(-50%, -50%);
   	    display: none;
-
 	}
-	nav ul li:hover a:after{
+	nav ul li:hover:after{
 		 display: block;
 	}
 }
+.grid{
+	margin: 0 auto;
+	max-width: 1170px;
+}
 .grid-item{
 	margin-bottom: 10px;
+	width: 270px;
 }
-
+.grid-item-height2 { height: 410px; }
 .team{
 	text-align: center;
 	padding: 100px 70px;
@@ -235,6 +238,8 @@ p{
 		width: 150px;
 		margin: 0 auto;
 		cursor: pointer;
+		@include transition(border-color  ease 0.5s);
+		@include transition(color  ease 0.5s);
 	}
 	.btn:hover{
 		border-color: $color_slide;
@@ -297,13 +302,46 @@ p{
 	margin-top: 70px;
 }
 
+
 .footer{
 	text-align: center;
 	padding: 70px 0px;
 	p{
 		line-height: 30px;
+		margin-bottom: 30px;
+
 	}
+	ul{
+		@include flexbox;
+		@include justify-content(space-around);
+		max-width: 230px;
+		margin: 0 auto;
+	}
+	ul li{
+		width: 26px;
+		height: 26px;
+		border-radius: 50%;
+		background-color:#3b5998;
+		@include flexbox;
+		@include align-items(center);
+		@include justify-content(center);
+
+	}
+	ul li:nth-child(2){
+		background-color:#26a6d1;
+	}
+	ul li:nth-child(3){
+		background-color:#0e76a8;
+	}
+	ul li:nth-child(4){
+		background-color:#3f729b;
+	}
+	ul li:nth-child(3){
+		background-color:#86c9ef;
+	}
+	a svg:hover #hover{
+		fill: #FFFF00;
+	}
+
 }
-
-
 
